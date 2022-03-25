@@ -24,23 +24,51 @@ li a {
   padding: 8px;
   background-color: #dddddd;
 }
-  </style>
-
+main{
+	margin: 7cm;
+}
+span{
+	position: fixed;
+	color: white;
+	background-color: #333;	
+	text-align: center;
+	padding: 20px;
+	font-size: 200%;
+  
+}
+</style>
 </head>
 <body>
   <header>
     <nav>
     	
      <ul>
-       <li><a>English</a></li>
-       <li><a>Français</a></li>
-       <li><a>العربية</a></li>
+       <li><input type="button" value="English" onclick="eng()"></li>
+       <li><input type="button" value="Français" onclick="fr()"></li>
+       <li><input type="button" value="العربية" onclick="ar()"></li>
       </ul>
 
     </nav>
   </header>
   <main>
-  <p>Wait for the surprise soon!!</p>
+  <span id="mes">Wait for the surprise soon!!</span>
   </main>
+
+
+
+  <script>
+  	function eng(){
+  		mes="Wait for the surprise soon!!";
+  		document.getElementById("mes").innerHTML=mes;
+  	}
+  	function fr(){
+  		mes="Attendez la surprise bientôt !!";
+  		document.getElementById("mes").innerHTML=mes;
+  	}
+  	function ar(){
+  		mes="انتظروا المفاجئة قريبا!!";
+  		document.getElementById("mes").innerHTML=mes;
+  	}
+  </script>
 </body>
 </html>
